@@ -1,0 +1,174 @@
+html{
+    font-family: sans-serif;
+
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+    background-color:  #d6180b;
+   
+}
+
+
+.header_logo{
+    width: 8em;
+    height: auto;
+    padding: 1em;
+}
+
+
+.header_logo:hover{
+    transform: scale(1.5);
+
+}   
+
+
+#hamburguer{
+    background-color: #ffd20c;
+    color:#030303;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+
+}
+
+.header-nave{
+    background-color: #d6180b;
+    display: none;
+
+}
+
+.header-nave.show{
+    display: block;
+}
+
+
+ul{
+    margin:0;
+}
+
+.header-nave ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+
+}
+
+.header-nave a{
+    color: #030303;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header-nave a:hover{
+    background-color: color-mix(in srgb,  #ffd20c, hsl(0, 4%, 45%) 50% );
+}
+
+@media screen and (min-width: 48em){
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d6180b;
+    }
+
+    .header_logo{ 
+        margin-left: 2em;
+    }
+
+    .header-nave{
+        display: block;
+    }
+
+    .header-nave ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header-nave li{
+        display: inline-block;
+    }
+    .header-nave a{
+        border-radius: 5px;
+
+    }
+
+    .header-nave a:hover{
+        background-color:   #ffd20c;
+        color: #030303;
+    }
+     
+}
+
+
+.imagin{
+   max-width: 87em;  
+   height: 28.5em;
+}
+ 
+.imagin{
+    background-image: url(../Desafio13/imagens13/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: initial;
+}
+
+.footer-icones{
+    
+    text-align: center;
+    background-color: #ffd20c;
+    color: #030303;
+    padding: 0.5em; 
+             
+}
+
+
+.tamanho{
+    
+    width: 1em;
+    margin-top: 0.5em; 
+    align-items: center;
+    font-size: 2em;
+    gap:1.5em;
+    
+}   
+ 
+.paragrafo_footer{
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 48em){
+    .tamanho{
+    margin: auto;    
+    width: 1em;
+    margin-top: 0.5em;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1.5em;
+   
+   }   
+   
+}
+
+
+   
+
+    
+   
+
+

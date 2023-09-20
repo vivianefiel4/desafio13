@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Desafio Aula 13 ♥ ::</title>
+    <link rel="icon" href="../Desafio13/imagens13/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo13.css">
+    <link rel="stylesheet" href="normalize.css">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+   
+    ul {
+        font-family: 'Lumanosimo', cursive;
+    }
+    
+</style>
+
+
+<body>
+    <header class="header">
+        <img src="..\Desafio13\imagens13\logo.jpg" alt="" class="header_logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header-nave">
+            <ul>
+                <li><a href="#">Game 01</a></li>
+                <li><a href="#">Game 02</a></li>
+                <li><a href="#">Game 03</a></li>
+                <li><a href="#">Game 04</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+
+        hamburguer.addEventListener('click', aparecer);
+
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+
+    </script>
+
+    <main>
+        <section class="imagin">
+
+        </section>
+
+    </main>
+    <footer>
+
+    <div class="footer-icones">
+        <img src="..\Desafio13\imagens13\imag1.png" alt="#" class="tamanho">
+        <img src="..\Desafio13\imagens13\imag2.png" alt="#" class="tamanho">
+        <img src="..\Desafio13\imagens13\imag3.png" alt="#" class="tamanho">
+        <img src="..\Desafio13\imagens13\imag4.png" alt="#" class="tamanho">
+    
+        <p class="paragrafo_footer"> Viviane Fiel do Carmo - Elas na Tech 2023 ♥ </p>
+    </div>
+    </footer>
+
+</body>
+
+</html>
